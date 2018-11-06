@@ -1,7 +1,7 @@
 ﻿using System;
 
 namespace FlightFinder.Shared {
-  class Itinerary {
+  public class Itinerary {
     public Itinerary(
       FlightSegment outBound, FlightSegment @return, decimal price
     ) {

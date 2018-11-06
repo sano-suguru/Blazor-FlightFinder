@@ -1,7 +1,7 @@
 ﻿using System;
 
 namespace FlightFinder.Shared {
-  class FlightSegment {
+  public class FlightSegment {
     public FlightSegment(
       string airLine,
       string fromAirportCode,
