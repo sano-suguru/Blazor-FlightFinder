@@ -17,6 +17,7 @@ namespace FlightFinder.Shared {
       this.DepartureTime = departureTime;
       this.ReturnTime = returnTime;
       this.DurationHours = durationHours;
+      this.TicketClass = ticketClass;
     }
 
     public string AirLine { get; }
@@ -25,5 +26,6 @@ namespace FlightFinder.Shared {
     public DateTime DepartureTime { get; }
     public DateTime ReturnTime { get; }
     public double DurationHours { get; }
+    public TicketClass TicketClass { get; }
   }
 }
