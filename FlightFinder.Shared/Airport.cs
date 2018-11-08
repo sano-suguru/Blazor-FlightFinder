@@ -1,5 +1,5 @@
 ﻿namespace FlightFinder.Shared {
-  class Airport {
+  public class Airport {
     public Airport(string code, string displayName) {
       Code = code;
       DisplayName = displayName;
