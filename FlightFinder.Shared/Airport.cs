@@ -1,8 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿namespace FlightFinder.Shared {
+  class Airport {
+    public Airport(string code, string displayName) {
+      Code = code;
+      DisplayName = displayName;
+    }
 
-namespace FlightFinder.Shared {
-  class Airpot {
+    public string Code { get; }
+    public string DisplayName { get; }
   }
 }
