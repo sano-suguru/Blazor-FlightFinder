@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.Extensions.DependencyInjection;
-using Newtonsoft.Json.Serialization;
 using System.Linq;
 using System.Net.Mime;
 
@@ -15,11 +14,10 @@ namespace FlightFinder.Server {
       services.AddMvc();
 
       services.AddResponseCompression(options => {
-        options.MimeTypes = ResponseCompressionDefaults.MimeTypes.Concat(new[]
-        {
-                    MediaTypeNames.Application.Octet,
-                    WasmMediaTypeNames.Application.Wasm,
-                });
+        options.MimeTypes = ResponseCompressionDefaults.MimeTypes.Concat(new[] {
+          MediaTypeNames.Application.Octet,
+          WasmMediaTypeNames.Application.Wasm,
+        });
       });
     }
 
