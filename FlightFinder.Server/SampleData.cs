@@ -1,9 +1,71 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using FlightFinder.Shared;
 
 namespace FlightFinder.Server {
   public class SampleData {
+    public readonly static Airport[] Airports = {
+      new Airport(code: "ATL", displayName: "Hartsfield–Jackson Atlanta International"),
+      new Airport(code: "PEK", displayName: "Beijing Capital International"),
+      new Airport(code: "DXB", displayName: "Dubai International"),
+      new Airport(code: "LAX", displayName: "Los Angeles International"),
+      new Airport(code: "HND", displayName: "Tokyo Haneda International"),
+      new Airport(code: "ORD", displayName: "O'Hare International"),
+      new Airport(code: "LHR", displayName: "London Heathrow"),
+      new Airport(code: "HKG", displayName: "Hong Kong International"),
+      new Airport(code: "PVG", displayName: "Shanghai Pudong International"),
+      new Airport(code: "CDG", displayName: "Charles de Gaulle"),
+      new Airport(code: "DFW", displayName: "Dallas/Fort Worth International"),
+      new Airport(code: "AMS", displayName: "Amsterdam Schiphol"),
+      new Airport(code: "FRA", displayName: "Frankfurt"),
+      new Airport(code: "IST", displayName: "Istanbul Atatürk"),
+      new Airport(code: "CAN", displayName: "Guangzhou Baiyun International"),
+      new Airport(code: "JFK", displayName: "John F. Kennedy International"),
+      new Airport(code: "SIN", displayName: "Singapore Changi"),
+      new Airport(code: "DEN", displayName: "Denver International"),
+      new Airport(code: "ICN", displayName: "Seoul Incheon International"),
+      new Airport(code: "BKK", displayName: "Suvarnabhumi"),
+      new Airport(code: "DEL", displayName: "Indira Gandhi International"),
+      new Airport(code: "CGK", displayName: "Soekarno–Hatta International"),
+      new Airport(code: "SFO", displayName: "San Francisco International"),
+      new Airport(code: "KUL", displayName: "Kuala Lumpur International"),
+      new Airport(code: "MAD", displayName: "Madrid Barajas"),
+      new Airport(code: "LAS", displayName: "McCarran International"),
+      new Airport(code: "CTU", displayName: "Chengdu Shuangliu International"),
+      new Airport(code: "SEA", displayName: "Seattle-Tacoma International"),
+      new Airport(code: "BOM", displayName: "Chhatrapati Shivaji International"),
+      new Airport(code: "MIA", displayName: "Miami International"),
+      new Airport(code: "CLT", displayName: "Charlotte Douglas International"),
+      new Airport(code: "YYZ", displayName: "Toronto Pearson International"),
+      new Airport(code: "BCN", displayName: "Barcelona–El Prat"),
+      new Airport(code: "PHX", displayName: "Phoenix Sky Harbor International"),
+      new Airport(code: "LGW", displayName: "London Gatwick"),
+      new Airport(code: "TPE", displayName: "Taiwan Taoyuan International"),
+      new Airport(code: "MUC", displayName: "Munich"),
+      new Airport(code: "SYD", displayName: "Sydney Kingsford-Smith"),
+      new Airport(code: "KMG", displayName: "Kunming Changshui International"),
+      new Airport(code: "SZX", displayName: "Shenzhen Bao'an International"),
+      new Airport(code: "MCO", displayName: "Orlando International"),
+      new Airport(code: "FCO", displayName: "Leonardo da Vinci–Fiumicino"),
+      new Airport(code: "IAH", displayName: "George Bush Intercontinental"),
+      new Airport(code: "MEX", displayName: "Benito Juárez International"),
+      new Airport(code: "SHA", displayName: "Shanghai Hongqiao International"),
+      new Airport(code: "EWR", displayName: "Newark Liberty International"),
+      new Airport(code: "MNL", displayName: "Ninoy Aquino International"),
+      new Airport(code: "NRT", displayName: "Narita International"),
+      new Airport(code: "MSP", displayName: "Minneapolis/St Paul International"),
+      new Airport(code: "DOH", displayName: "Hamad International"),
+    };
+
+    public readonly static string[] Airlines = {
+      "American Airlines",
+      "British Airways",
+      "Delta",
+      "Emirates",
+      "Etihad",
+      "JetBlue",
+      "KLM",
+      "Singapore Airways",
+      "Qantas",
+      "Virgin Atlantic",
+    };
   }
 }
