@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
+﻿using FlightFinder.Shared;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 
-namespace FlightFinder.Server.Controllers
-{
-    [Route("api/[controller]")]
-    [ApiController]
-    public class AirportsController : ControllerBase
-    {
-    }
+namespace FlightFinder.Server.Controllers {
+  [Route("api/[controller]")]
+  public class AirportsController : Controller {
+    public IEnumerable<Airport> GetAirports() =>
+      SampleData.Airports;
+  }
 }
