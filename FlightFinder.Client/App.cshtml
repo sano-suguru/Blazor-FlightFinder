@@ -1,4 +1,6 @@
-﻿<div id="search-and-results-area">
+﻿@inject AppState state
+
+<div id="search-and-results-area">
   <div id="search-area" class="px-2 py-3">
     @*検索フォーム*@
   </div>
@@ -8,5 +10,7 @@
 </div>
 
 @functions {
-  
+  protected override void OnInit() {
+    state.OnChange += StateHasChanged;
+  }
 }
