@@ -2,6 +2,7 @@
 
 namespace FlightFinder.Shared {
   public class FlightSegment {
+    public FlightSegment() { }
     public FlightSegment(
       string airLine,
       string fromAirportCode,
@@ -20,12 +21,12 @@ namespace FlightFinder.Shared {
       this.TicketClass = ticketClass;
     }
 
-    public string AirLine { get; }
-    public string FromAirportCode { get; }
-    public string ToAirportCode { get; }
-    public DateTime DepartureTime { get; }
-    public DateTime ReturnTime { get; }
-    public double DurationHours { get; }
-    public TicketClass TicketClass { get; }
+    public string AirLine { get; private set; }
+    public string FromAirportCode { get; private set; }
+    public string ToAirportCode { get; private set; }
+    public DateTime DepartureTime { get; private set; }
+    public DateTime ReturnTime { get; private set; }
+    public double DurationHours { get; private set; }
+    public TicketClass TicketClass { get; private set; }
   }
 }

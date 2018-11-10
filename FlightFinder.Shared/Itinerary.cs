@@ -10,14 +10,16 @@ namespace FlightFinder.Shared {
       this.Price = price;
     }
 
-    public FlightSegment OutBound { get; }
-    public FlightSegment Return { get; }
-    public decimal Price { get; }
+    public Itinerary() { }
+
+    public FlightSegment OutBound { get; private set; }
+    public FlightSegment Return { get; private set; }
+    public decimal Price { get; private set; }
 
     public double TotalDurationhours =>
       OutBound.DurationHours + Return.DurationHours;
 
     public string AirlineName =>
-      (OutBound.AirLine == Return.AirLine) ? OutBound.AirLine : Return.AirLine;
+      (OutBound.AirLine == Return.AirLine) ? OutBound.AirLine : "Multiple airlines";
   }
 }
