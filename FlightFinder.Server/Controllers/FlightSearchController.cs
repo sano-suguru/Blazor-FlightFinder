@@ -8,6 +8,8 @@ using System.Threading.Tasks;
 namespace FlightFinder.Server.Controllers {
   [Route("api/[controller]")]
   public class FlightSearchController : Controller {
+
+    [HttpPost]
     public async Task<IEnumerable<Itinerary>> Search([FromBody] SearchCriteria criteria) {
       // web api 疑似遅延
       await Task.Delay(500);
